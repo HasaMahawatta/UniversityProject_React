@@ -1,10 +1,16 @@
-
 import './App.css';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import UniversitiesListing from "./Components/UniversitiesListing";
+import Buttons from "./Components/Buttons";
+
 
 function App() {
   return (
     <div className="App">
-      App start
+      <Buttons />
+      <Router>
+         <Route path = "/" exact component={UniversitiesListing} /> {/*Path to the product selector  */}
+      </Router>
       
     </div>
   );
