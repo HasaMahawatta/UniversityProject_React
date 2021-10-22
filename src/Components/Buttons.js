@@ -1,37 +1,8 @@
-import React , { useCallback } from "react";
+import React  from "react";
 import { fetchUniversities, addUniversities, removeUniversities } from "../Redux/actions/universityActions";
-import { Link } from "react-router-dom";
-import Universities from "./UniversitiesListing";
 import { useDispatch } from "react-redux";
-import {universityReducer} from "../Redux/reducers/universityReducer";
 
 
-// const component = props => {
-//       return (
-//           <div>
-//               <button onClick={props.DisplayTable}>cool</button>
-//           </div>
-//       );
-//   };
-
-// function mapStateToProps(state) {
-//       console.log("state", state)
-// return {
-//     click: state.allUniversities.universities
-// };
-// };
-
-
-// const mapDispachToProps = (dispatch) => {
-//   return {
-// DisplayTable: (click) => {dispatch (loadUniversities(click));
-//       },
-//   };
-// };
-
-// const AppTable = connect(mapStateToProps, mapDispachToProps)(component);
-
-// export default AppTable;
 
 const Buttons = () => {
 

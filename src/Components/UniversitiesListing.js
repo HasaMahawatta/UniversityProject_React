@@ -1,8 +1,5 @@
  import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import axios from "axios";
-import { useEffect } from "react";
-import { loadUniversities } from "../Redux/actions/universityActions";
+import { useSelector } from "react-redux";
 
 
  
@@ -10,28 +7,7 @@ import { loadUniversities } from "../Redux/actions/universityActions";
       
       const universities = useSelector((state)=> state.allUniversities.universities );  //hook to access the state in store
      
-      // const dispatch = useDispatch();
-
-      // //Fetch the values from the server
-      // const fetchUniversities = async () =>{
-      //       const response = await axios.get("http://universities.hipolabs.com/search?country=Australia")  //base URL
-      //       .catch((error)=>{
-      //             console.log(error);
-      //       });
-      //       //dispatch the data 
-      //       dispatch(loadUniversities(response.data));
-      // };
-
-      // useEffect(()=>{
-      //       fetchUniversities();
-      // }, []);
-
       
-
-
-            //const renderuniversities = 
-            // universities.map((uni)=> {
-            //  const {alpha_two_code, name , country} = uni;
             return (
                   <div>
                   {/* Add the table from the semantic ui */}

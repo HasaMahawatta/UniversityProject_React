@@ -26,9 +26,7 @@ export const universityReducer = (state = initialState, { type, payload }) => {
                    }
       
       
-                  //                  const remove_first = current_list_cpy.splice(0, 1);
-      
-                  //                  current_list_cpy.push(remove_first[0]);
+                  
       
                   return {
                         ...state,
