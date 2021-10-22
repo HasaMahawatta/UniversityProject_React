@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <Buttons />
       <Router>
-         <Route path = "/" exact component={UniversitiesListing} /> {/*Path to the product selector  */}
+         <Route path = "/" exact component={UniversitiesListing} /> {/*Path to the selector  */}
       </Router>
+      
       
     </div>
   );
