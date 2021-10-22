@@ -52,7 +52,7 @@ const Buttons = () => {
               <i class="plus circle icon"></i>
               Add
               </button>
-              <button onClick="" class="ui right labeled icon button negative">
+              <button onClick={()=>{dispatch(removeUniversities())}} class="ui right labeled icon button negative">
               <i class="right arrow icon"></i>
               Delete
               </button>

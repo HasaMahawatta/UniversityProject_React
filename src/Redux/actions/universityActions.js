@@ -18,17 +18,15 @@ export const fetchUniversities = () => async (dispatch) => {
       }
 };
 
-export const loadUniversities = (universities) =>{
+export const addUniversities = () => {
       return {
-            type: ActionTypes.LOAD_UNIVERSITIES,
-            payload: universities,
-            
+            type: ActionTypes.ADD_UNIVERSITY
       };
 };
 
-export const addUniversities = (university) =>{
+export const removeUniversities = () => {
       return {
-            type: ActionTypes.ADD_UNIVERSITY,
-            payload: university,
+            type: ActionTypes.REMOVE_UNIVERSITY
       };
 };
+
